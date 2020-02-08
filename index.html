@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>topotop</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="kkol.js"></script>
+  <!-- <script src="jquery-3.4.1.min.js"></script> -->
+  <link href="https://fonts.googleapis.com/css?family=Play&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Comfortaa&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Pacifico&display=swap" rel="stylesheet">
+  
+
+    
+</head>
+<body>
+    
+</body>
+</html>
+
+<body>
+    <div align="center">
+        <ul id="navbar">
+          <li><a href="https://okkloqi.000webhostapp.com/">главная</a></li>
+          <li class="dropdown">
+          <a href="#">сюжеты игр</a>
+          <div class="dropdown-content">
+              <a href="http://okloqi.000webhostapp.com/#">сюжет терарии</a>
+             <a href="https://nikollok.github.io/oklok.github.io/">сюжет death stranding</a>
+             
+            </div>
+          </li>
+          <li><a href="#">Тесты по играм</a></li>
+          <li><a href="http://gvard.github.io/">О нас</a></li>
+        </ul>
+              </div>
+              <br>
+
+    <h2 class="quizHeader">тесты по террарии</h2>
+    
+      <table style="width:583px">
+      <tr>
+        <td>
+            <div>
+                <p class="question">1. какой финальный босс терарии?</p>
+  
+              <ul>
+              <input class="answer" type="radio" name="q1" value="1">
+              <label id="correctString1">мунлорд</label>
+              <br>
+              <input class="answer" type="radio" name="q1" value="0">
+              <label>скелетрон</label>
+              <br>
+              <input class="answer" type="radio" name="q1" value="0">
+              <label>глаз ктулху</label>
+              <br>
+              <input class="answer" type="radio" name="q1" value="0">
+              <label>марсианская тарелка</label>
+              </ul>
+            </div>
+        </td>
+        <td>
+            <div>
+                <p class="question">2. какие 2 босса меняються в зависимости от биома?</p>
+  
+              <ul>
+              <input class="answer" type="radio" name="q2" value="0">
+              <label>мозг ктулху и скелетон</label>
+              <br>
+              <input class="answer" type="radio" name="q2" value="1">
+              <label id="correctString2">мозг ктулху и пожиратель миров</label>
+              <br>
+              <input class="answer" type="radio" name="q2" value="0">
+              <label>мозг ктулху и скелетрон прайм</label>
+              <br>
+              <input class="answer" type="radio" name="q2" value="0">
+              <label>мозг ктулху и глаз ктулху</label>
+              </ul>
+            </div>
+        </td>
+      </tr>
+      <tr>
+        <td>
+            <div>
+                <p class="question">3. какой самый сильный меч в террарии? </p>
+  
+              <ul>
+              <input class="answer" type="radio" name="q3" value="0">
+              <label>терамеч</label>
+              <br>
+              <input class="answer" type="radio" name="q3" value="1">
+              <label id="correctString3">мяомур</label>
+              <br>
+              <input class="answer" type="radio" name="q3" value="0">
+              <label>деревяный меч xD</label>
+              <br>
+              <input class="answer" type="radio" name="q3" value="0">
+              <label>орихалковый</label>
+              </ul>
+          </div>
+        </td>
+        <td>
+            <div>
+                <p class="question">4. какие самые лучшие крылья?</p>
+  
+              <ul>
+              <input class="answer" type="radio" name="q4" value="0">
+              <label>ангела,демона</label>
+              <br>
+              <input class="answer" type="radio" name="q4" value="1">
+              <label id="correctString4">солнечные</label>
+              <br>
+              <input class="answer" type="radio" name="q4" value="0">
+              <label>жуткие</label>
+              <br>
+              <input class="answer" type="radio" name="q4" value="0">
+              <label>туманости</label>
+              </ul>
+            </div>
+        </td>
+      </tr>
+      </table>
+  <br/>
+    <div class="submitter">
+            <input class="quizSubmit" id="submitButton" onClick="submitQuiz()"
+            type="submit" value="Submit" />
+      </div>
+    
+  <!--show only wrong answers on submit-->
+      <div class="quizAnswers" id="correctAnswer1"></div>
+          <div class="quizAnswers" id="correctAnswer2"></div>
+      <div class="quizAnswers" id="correctAnswer3"></div>
+      <div class="quizAnswers" id="correctAnswer4"></div>
+  
+  <!--show score upon submit-->
+      <div>
+          <h2 class="quizScore" id="userScore"></h2>
+      </div>
+      </div>
+  
+  </body>
